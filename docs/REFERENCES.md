@@ -13,6 +13,7 @@ file without updating that one.
 - Bjørnland, H. C., Hardy, N., & Korobilis, D. (2026). Forecasting oil prices across the distribution: A quantile VAR approach. arXiv:2604.12927.
 - Bollerslev, T. (1986). Generalized autoregressive conditional heteroskedasticity. Journal of Econometrics, 31(3), 307–327. https://doi.org/10.1016/0304-4076(86)90063-1
 - Bollerslev, T. (1987). A conditionally heteroskedastic time series model for speculative prices and rates of return. The Review of Economics and Statistics, 69(3), 542–547.
+- Brini, A. (2026). Forecasting realized volatility with time series foundation models: A comparison with econometric benchmarks. arXiv:2607.05291.
 - Christoffersen, P. F. (1998). Evaluating interval forecasts. International Economic Review, 39(4), 841–862.
 - Das, A., Kong, W., Sen, R., & Zhou, Y. (2024). A decoder-only foundation model for time-series forecasting. In Proceedings of the 41st International Conference on Machine Learning (PMLR Vol. 235, pp. 10148–10167). arXiv:2310.10688.
 - Das, S. R., Goyal, T., & Yadav, M. (2026). Multivariate financial forecasting using the Chronos time series foundation models. arXiv:2605.21504.
