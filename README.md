@@ -1,7 +1,14 @@
 # Conformalized time-series foundation models for commodity prices
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21896844.svg)](https://doi.org/10.5281/zenodo.21896844)
+
 Replication material for *"Conformalized time-series foundation models for commodity prices:
 an econometric audit across crisis regimes"* (Suho Ahn, KAIST BTM).
+
+The archived snapshot cited in the paper is release **v1.0.0**,
+[10.5281/zenodo.21896844](https://doi.org/10.5281/zenodo.21896844). That DOI is fixed to the
+exact state reviewers saw; [10.5281/zenodo.21896843](https://doi.org/10.5281/zenodo.21896843)
+is the concept DOI and always resolves to the latest version.
 
 This repository contains everything needed to check the paper's numbers without rerunning a
 GPU: the cached forecasts of every model, the evaluation code, the statistical tests, the
