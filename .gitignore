@@ -14,5 +14,7 @@ model_weights/
 *.ckpt
 *.bin
 
-# Never commit: publisher PDFs.
+# Never commit: publisher PDFs. The exception is our own figures, whose vector
+# versions belong in the repository — journals and readers both want them.
 *.pdf
+!outputs/figures/*.pdf
