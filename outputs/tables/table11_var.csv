@@ -1,0 +1,7 @@
+model,h = 1,h = 5,h = 22
+GARCH-t,0.7,0.6,0.2
+QR-AR,0.6,0.5,0.6
+Moirai-2 (S),0.7,0.7,0.3
+Chronos-2,0.6,0.5,0.4
+Chronos-2 + LoRA,0.8,0.3,0.4
+Chronos-2 + full FT,0.1,0.0,0.2

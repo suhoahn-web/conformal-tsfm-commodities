@@ -1,0 +1,10 @@
+model,Calm,COVID-19,Ukraine war
+GARCH-t,0.796,0.737,0.732
+QR-AR,0.796,0.608,0.622
+TimesFM 2.5,0.811,0.792,0.809
+Moirai-2 (S),0.787,0.722,0.748
+Chronos-2,0.782,0.74,0.764
+Chronos-2 + LoRA,0.783,0.733,0.748
+Chronos-2 + full FT,0.753,0.696,0.718
+Chronos-Bolt (S),0.77,0.715,0.756
+Chronos-Bolt (B),0.792,0.737,0.729

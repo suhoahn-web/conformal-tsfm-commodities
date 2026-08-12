@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: >-
+  Conformalized time-series foundation models for commodity prices:
+  an econometric audit across crisis regimes
+message: >-
+  If you use this software or the cached forecasts, please cite the paper.
+type: software
+authors:
+  - family-names: Ahn
+    given-names: Suho
+    affiliation: >-
+      Department of Business and Technology Management, KAIST
+    email: dkstngh3502@kaist.ac.kr
+repository-code: https://github.com/suhoahn-web/conformal-tsfm-commodities
+abstract: >-
+  Replication material for an audit of five time-series foundation models on ten
+  daily commodity futures, 2015-2026, against a classical econometric panel under
+  a Model Confidence Set, with predictive-interval coverage evaluated inside named
+  crisis regimes and validated on a holdout window sealed before any model was run.
+  Includes cached forecasts for every model-series-horizon combination, the
+  evaluation and conformal code, information-set leakage tests, and the frozen
+  pre-registration with its deviation log.
+keywords:
+  - commodity price forecasting
+  - time-series foundation models
+  - conformal prediction
+  - model confidence set
+  - forecast evaluation
+  - crisis regimes
+license: MIT

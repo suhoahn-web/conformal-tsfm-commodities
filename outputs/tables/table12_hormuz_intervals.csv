@@ -1,0 +1,6 @@
+Interval construction,h = 1,h = 5,h = 22
+Native,0.783,0.783,0.694
+Split conformal,0.731,0.708,0.679
+ACI,0.802,0.783,0.84
+CQR,0.783,0.788,0.755
+SPCI-lite,0.708,0.698,0.599

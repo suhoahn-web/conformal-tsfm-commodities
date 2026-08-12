@@ -1,0 +1,22 @@
+HORMUZ HOLDOUT UNSEAL APPROVAL
+==============================
+
+Approved by: the project owner (user), verbally in session, 2026-08-11 (KST).
+Approval statement: "호르무즈 먼저 해줘" [Korean; "do the Hormuz one first"] — instruction to proceed with the
+final Hormuz-window evaluation.
+
+Recorded by: Claude Code, at the user's instruction, 2026-08-11.
+
+Pre-conditions verified before this file was created:
+  1. RESEARCH_PLAN_v1.md frozen (user approval 2026-08-11); all deviations logged.
+  2. All 12 model prediction caches complete (360 files, outputs/predictions/),
+     produced by zero-shot models or models trained only on data <= 2014-12-31.
+  3. Phase-1 and phase-2 evaluations complete on the embargoed window
+     (2015-01-01 .. 2026-02-27); metric set frozen.
+  4. Outcome interpretations pre-committed in preregistration/HORMUZ_PRECOMMIT.md
+     (outcomes A, B, C) BEFORE any Hormuz result was observed.
+  5. No tuning decision at any point in the project used data from
+     2026-02-28 .. 2026-07-31.
+
+This evaluation runs exactly once. run_hormuz_final.py writes
+HORMUZ_EVALUATED.marker on completion and refuses any second pass.

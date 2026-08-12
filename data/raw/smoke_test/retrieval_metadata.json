@@ -1,0 +1,95 @@
+{
+  "results": [
+    {
+      "name": "wti_spot_eia",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "rows": 10215,
+      "first_date": "1986-01-02",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:07:16.929555+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\wti_spot_eia.xls"
+    },
+    {
+      "name": "brent_spot_eia",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "rows": 9947,
+      "first_date": "1987-05-20",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:07:19.100667+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\brent_spot_eia.xls"
+    },
+    {
+      "name": "henryhub_spot_eia",
+      "url": "https://www.eia.gov/dnav/ng/hist_xls/RNGWHHDd.xls",
+      "rows": 7425,
+      "first_date": "1997-01-07",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:07:21.553774+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\henryhub_spot_eia.xls"
+    },
+    {
+      "name": "gold_fut_yahoo",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=max&interval=1d",
+      "rows": 267,
+      "first_date": "2000-09-01",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:07:23.430976+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\gold_fut_yahoo.csv"
+    },
+    {
+      "name": "silver_fut_yahoo",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SI=F?range=max&interval=1d",
+      "rows": 267,
+      "first_date": "2000-09-01",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:07:25.203090+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\silver_fut_yahoo.csv"
+    },
+    {
+      "name": "copper_fut_yahoo",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HG=F?range=max&interval=1d",
+      "rows": 267,
+      "first_date": "2000-09-01",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:07:27.136866+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\copper_fut_yahoo.csv"
+    },
+    {
+      "name": "corn_fut_yahoo",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZC=F?range=max&interval=1d",
+      "rows": 268,
+      "first_date": "2000-08-01",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:07:28.960591+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\corn_fut_yahoo.csv"
+    },
+    {
+      "name": "wheat_fut_yahoo",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZW=F?range=max&interval=1d",
+      "rows": 268,
+      "first_date": "2000-08-01",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:07:30.937908+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\wheat_fut_yahoo.csv"
+    },
+    {
+      "name": "soybean_fut_yahoo",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZS=F?range=max&interval=1d",
+      "rows": 266,
+      "first_date": "2000-11-01",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:07:32.833495+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\soybean_fut_yahoo.csv"
+    },
+    {
+      "name": "worldbank_pinksheet",
+      "url": "https://thedocs.worldbank.org/en/doc/5d903e848db1d1b83e0ec8f744e55570-0350012021/related/CMO-Historical-Data-Monthly.xlsx",
+      "rows": 781,
+      "first_date": "1960-01 (monthly)",
+      "last_date": "see sheet",
+      "retrieved_utc": "2026-08-10T16:07:35.896047+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\smoke_test\\worldbank_pinksheet_monthly.xlsx"
+    }
+  ],
+  "failures": []
+}

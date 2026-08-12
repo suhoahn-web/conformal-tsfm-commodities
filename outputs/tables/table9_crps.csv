@@ -1,0 +1,10 @@
+model,crps_ALL
+GARCH-t,3.681
+QR-AR,3.745
+TimesFM 2.5,3.804
+Moirai-2 (S),3.759
+Chronos-2,3.802
+Chronos-2 + LoRA,3.788
+Chronos-2 + full FT,3.919
+Chronos-Bolt (S),3.956
+Chronos-Bolt (B),3.957

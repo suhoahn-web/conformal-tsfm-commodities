@@ -1,0 +1,163 @@
+{
+  "results": [
+    {
+      "name": "wti_spot",
+      "source": "EIA",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "rows": 10215,
+      "first_date": "1986-01-02",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:30:52.502784+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\wti_spot.csv"
+    },
+    {
+      "name": "brent_spot",
+      "source": "EIA",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "rows": 9947,
+      "first_date": "1987-05-20",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:30:53.718726+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\brent_spot.csv"
+    },
+    {
+      "name": "henryhub_spot",
+      "source": "EIA",
+      "url": "https://www.eia.gov/dnav/ng/hist_xls/RNGWHHDd.xls",
+      "rows": 7425,
+      "first_date": "1997-01-07",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:30:54.933253+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\henryhub_spot.csv"
+    },
+    {
+      "name": "heatingoil_spot",
+      "source": "EIA",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2F_PF4_Y35NY_DPGd.xls",
+      "rows": 10089,
+      "first_date": "1986-06-02",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:30:56.108746+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\heatingoil_spot.csv"
+    },
+    {
+      "name": "rbob_spot",
+      "source": "EIA",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRU_PF4_Y35NY_DPGd.xls",
+      "rows": 10091,
+      "first_date": "1986-06-02",
+      "last_date": "2026-08-03",
+      "retrieved_utc": "2026-08-10T16:30:57.217706+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\rbob_spot.csv"
+    },
+    {
+      "name": "wti_fut",
+      "source": "Yahoo",
+      "symbol": "CL=F",
+      "rows": 6518,
+      "first_date": "2000-08-23",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:31:35.551065+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\wti_fut.csv"
+    },
+    {
+      "name": "natgas_fut",
+      "source": "Yahoo",
+      "symbol": "NG=F",
+      "rows": 6515,
+      "first_date": "2000-08-30",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:32:14.161094+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\natgas_fut.csv"
+    },
+    {
+      "name": "gold_fut",
+      "source": "Yahoo",
+      "symbol": "GC=F",
+      "rows": 6509,
+      "first_date": "2000-08-30",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:32:51.146224+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\gold_fut.csv"
+    },
+    {
+      "name": "silver_fut",
+      "source": "Yahoo",
+      "symbol": "SI=F",
+      "rows": 6511,
+      "first_date": "2000-08-30",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:33:29.088235+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\silver_fut.csv"
+    },
+    {
+      "name": "copper_fut",
+      "source": "Yahoo",
+      "symbol": "HG=F",
+      "rows": 6514,
+      "first_date": "2000-08-30",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:34:06.288096+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\copper_fut.csv"
+    },
+    {
+      "name": "platinum_fut",
+      "source": "Yahoo",
+      "symbol": "PL=F",
+      "rows": 5993,
+      "first_date": "2000-01-04",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:34:42.719889+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\platinum_fut.csv"
+    },
+    {
+      "name": "corn_fut",
+      "source": "Yahoo",
+      "symbol": "ZC=F",
+      "rows": 6521,
+      "first_date": "2000-07-17",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:35:19.845862+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\corn_fut.csv"
+    },
+    {
+      "name": "wheat_fut",
+      "source": "Yahoo",
+      "symbol": "ZW=F",
+      "rows": 6533,
+      "first_date": "2000-07-17",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:35:57.841800+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\wheat_fut.csv"
+    },
+    {
+      "name": "soybean_fut",
+      "source": "Yahoo",
+      "symbol": "ZS=F",
+      "rows": 6513,
+      "first_date": "2000-09-15",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:36:33.156695+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\soybean_fut.csv"
+    },
+    {
+      "name": "worldbank_pinksheet",
+      "source": "WorldBank",
+      "url": "https://thedocs.worldbank.org/en/doc/5d903e848db1d1b83e0ec8f744e55570-0350012021/related/CMO-Historical-Data-Monthly.xlsx",
+      "rows": 781,
+      "retrieved_utc": "2026-08-10T16:36:34.679723+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\worldbank_pinksheet_monthly.xlsx"
+    },
+    {
+      "name": "brent_fut",
+      "source": "Yahoo",
+      "symbol": "BZ=F",
+      "rows": 4736,
+      "first_date": "2007-07-30",
+      "last_date": "2026-08-10",
+      "retrieved_utc": "2026-08-10T16:37:34.869778+00:00",
+      "file": "G:\\\ub0b4 \ub4dc\ub77c\uc774\ube0c\\\ub17c\ubb38 \ud504\ub85c\uc81d\ud2b8\\\uc6d0\uc790\uc7ac\uac00\uaca9\uc608\uce21_GPU\\data\\raw\\prices\\brent_fut.csv"
+    }
+  ],
+  "failures": []
+}
