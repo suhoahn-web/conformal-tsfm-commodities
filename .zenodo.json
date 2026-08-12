@@ -1,0 +1,26 @@
+{
+  "upload_type": "software",
+  "title": "Conformalized time-series foundation models for commodity prices: replication material",
+  "creators": [
+    {
+      "name": "Ahn, Suho",
+      "affiliation": "Department of Business and Technology Management, KAIST, Daejeon, Republic of Korea"
+    }
+  ],
+  "description": "<p>Replication material for the paper <em>\"Conformalized time-series foundation models for commodity prices: an econometric audit across crisis regimes\"</em>.</p><p>Five time-series foundation models (Chronos-Bolt small and base, Chronos-2, TimesFM 2.5, Moirai-2) are audited on ten daily commodity futures over 2015&ndash;2026 against a classical econometric panel, under a Model Confidence Set, with predictive-interval coverage evaluated inside named crisis regimes and backtested as value-at-risk, and validated on a holdout window covering the 2026 Iran&ndash;Hormuz shock that was sealed before any model was run and evaluated exactly once.</p><p>This archive contains: cached forecasts for all 361 model&ndash;series&ndash;horizon combinations (no GPU required to check the paper's numbers); the evaluation code, statistical tests and conformal prediction constructions; information-set leakage tests that verify no future information enters an interval; the frozen pre-registration with its complete deviation log; the pre-committed interpretation of every possible holdout outcome, written before unsealing; and the audit trail of the single-use holdout evaluation.</p><p>Licensing is mixed: code is released under the MIT License; result files, tables and figures under CC BY 4.0; raw price data under the terms of its original public sources, documented per series in <code>data/DATA_SOURCES.md</code>. Third-party model weights are not redistributed &mdash; the Hugging Face checkpoint identifiers are recorded in the README.</p>",
+  "license": "mit",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "commodity price forecasting",
+    "time-series foundation models",
+    "conformal prediction",
+    "model confidence set",
+    "forecast evaluation",
+    "crisis regimes",
+    "adaptive conformal inference",
+    "value-at-risk backtesting",
+    "pre-registration",
+    "reproducibility"
+  ]
+}
