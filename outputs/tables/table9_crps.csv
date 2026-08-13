@@ -1,4 +1,4 @@
-model,crps_ALL
+model,Common-grid quantile score
 GARCH-t,3.681
 QR-AR,3.745
 TimesFM 2.5,3.804

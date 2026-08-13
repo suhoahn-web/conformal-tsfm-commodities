@@ -132,17 +132,17 @@
 
 ## Table 9. Mean CRPS at h = 1 across the ten commodities. Lower is better.
 
-| model               |   crps_ALL |
-|:--------------------|-----------:|
-| GARCH-t             |      3.681 |
-| QR-AR               |      3.745 |
-| TimesFM 2.5         |      3.804 |
-| Moirai-2 (S)        |      3.759 |
-| Chronos-2           |      3.802 |
-| Chronos-2 + LoRA    |      3.788 |
-| Chronos-2 + full FT |      3.919 |
-| Chronos-Bolt (S)    |      3.956 |
-| Chronos-Bolt (B)    |      3.957 |
+| model               |   Common-grid quantile score |
+|:--------------------|-----------------------------:|
+| GARCH-t             |                        3.681 |
+| QR-AR               |                        3.745 |
+| TimesFM 2.5         |                        3.804 |
+| Moirai-2 (S)        |                        3.759 |
+| Chronos-2           |                        3.802 |
+| Chronos-2 + LoRA    |                        3.788 |
+| Chronos-2 + full FT |                        3.919 |
+| Chronos-Bolt (S)    |                        3.956 |
+| Chronos-Bolt (B)    |                        3.957 |
 
 ## Table 11. Share of commodities passing the Kupiec unconditional-coverage backtest of the 95% value-at-risk (p > 0.05), by model and horizon. Only models with an unclamped 5th percentile are shown.
 

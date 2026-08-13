@@ -159,7 +159,10 @@ def t8_width_crps() -> None:
          .groupby("band")["width"].median().round(2))
     w = w.reindex([b for b in BAND if b in w.index]).rename(index=BAND)
     crps = pd.read_csv(P1 / "crps_phase1.csv")
-    c = crps[crps.h == 1].groupby("model")["crps_ALL"].mean().round(3)
+    # the analysis file keeps its original column name; the manuscript table does not,
+    # because the paper states explicitly that this is not CRPS
+    c = (crps[crps.h == 1].groupby("model")["crps_ALL"].mean().round(3)
+         .rename("Common-grid quantile score"))
     tables["table8_width"] = (
         "Table 8. Median interval width in calm periods at h = 5 (price units).",
         w.reset_index().rename(columns={"band": "Construction", "width": "Median width"}))
