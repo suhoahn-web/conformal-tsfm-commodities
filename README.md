@@ -1,12 +1,12 @@
 # Conformalized time-series foundation models for commodity prices
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21896844.svg)](https://doi.org/10.5281/zenodo.21896844)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21910896.svg)](https://doi.org/10.5281/zenodo.21910896)
 
 Replication material for *"Conformalized time-series foundation models for commodity prices:
 an econometric audit across crisis regimes"* (Suho Ahn, KAIST BTM).
 
-The archived snapshot cited in the paper is release **v1.0.0**,
-[10.5281/zenodo.21896844](https://doi.org/10.5281/zenodo.21896844). That DOI is fixed to the
+The archived snapshot cited in the paper is release **v1.1.0**,
+[10.5281/zenodo.21910896](https://doi.org/10.5281/zenodo.21910896). That DOI is fixed to the
 exact state reviewers saw; [10.5281/zenodo.21896843](https://doi.org/10.5281/zenodo.21896843)
 is the concept DOI and always resolves to the latest version.
 
@@ -31,12 +31,16 @@ series–horizon cells (0.867–0.967) than every foundation model (0.400–0.83
 models are usually *in* the set — they are not usually excluded — but the ordering between
 families is clean.
 
-**Interval calibration.** Static split conformal prediction is worse than no calibration at
-all in a crisis, falling to 0.599 coverage against a nominal 0.80 at the monthly horizon.
-Adaptive conformal inference (ACI) is the best construction at every horizon and regime: it
-holds nominal at h = 1 and h = 5, and at h = 22 removes about two-thirds of the crisis
-shortfall (0.756–0.763 against 0.599–0.637 for split conformal) at a cost of roughly 25%
-more width. It does not close the gap entirely, and the paper says so.
+**Interval calibration.** A trailing fixed-level conformal window under-covers badly in a
+crisis, falling to 0.599 against a nominal 0.80 at the monthly horizon. A sensitivity sweep
+(`analysis/phase3_sensitivity/`) shows this is substantially a property of the 250-observation
+window we pre-registered: a 50-observation window recovers most of the crisis coverage at the
+daily and weekly horizons, and beats adaptive conformal inference outright at h = 1 in the
+COVID window (0.800 against 0.770). What no fixed window achieves is stability — the one that
+rescues h = 1 falls to 0.679 at h = 22. Across all nine horizon-by-regime cells the worst
+coverage error is 0.044 for a single adaptive step size against 0.121 for the best fixed
+window, at a width premium reaching 44% at the monthly horizon. The claim is about removing a
+window choice that cannot be made well in advance, not about winning every cell.
 
 **Sealed holdout.** The 2026 Iran–Hormuz window was excluded from all development results by
 a hard-coded embargo, its metric set frozen in advance, the interpretation of each possible
@@ -71,9 +75,12 @@ analysis/
   phase1_local/               point accuracy, interval coverage, CRPS  (embargoed window)
   phase2_local/               MCS, Giacomini-White, VaR backtests
   final_hormuz/               the single-use sealed-holdout evaluation and its audit trail
+  phase3_sensitivity/         post-hoc robustness: calibration-window and step-size sweep,
+                              non-overlapping value-at-risk backtests, and the
+                              interpretation pre-committed before the sweep finished
 outputs/
   predictions/                361 cached forecast files — every model x series x horizon
-  tables/                     the 14 manuscript tables as CSV
+  tables/                     the 16 manuscript tables as CSV
   figures/                    the 5 manuscript figures as PNG
 docs/
   REFERENCES.md               the paper's reference list
@@ -93,7 +100,14 @@ python analysis/phase1_local/recompute_crps.py   # CRPS on the common quantile g
 python analysis/phase2_local/run_phase2_tests.py # MCS, Giacomini-White, VaR
 python src/manuscript/make_tables.py             # regenerate the manuscript tables
 python src/visualization/make_figures.py         # regenerate the figures
+
+python analysis/phase3_sensitivity/run_calibration_sensitivity.py  # window + step-size sweep
+python analysis/phase3_sensitivity/run_var_nonoverlap.py           # non-overlapping VaR
 ```
+
+The two sensitivity scripts take about fifteen minutes together on a laptop and reproduce the
+analysis that narrowed the paper's calibration claim. `PRECOMMIT_E3.md` beside them records
+how each possible outcome was to be read, and was written before any output existed.
 
 `analysis/final_hormuz/run_hormuz_final.py` is the sealed-holdout script. It refuses to run
 without an approval file and refuses to run twice; both guards, and the marker showing it
@@ -135,11 +149,12 @@ statistic on *absolute* t-statistics but the elimination rule on *signed* ones
 absolute t-statistics — removes the wrong model. `src/eval_core/metrics.py` implements the
 published rule.
 
-**CRPS is computed on the grid every model can express, {0.10, 0.50, 0.90}.** Chronos-Bolt
-clamps its quantile head to [0.1, 0.9] and TimesFM 2.5 emits deciles, so a quantile-based
-CRPS on each model's own grid measures grid geometry rather than distributional quality. Any
-study ranking foundation models on CRPS should state which quantiles its models actually
-emit.
+**The distributional score is not CRPS.** Chronos-Bolt clamps its quantile head to
+[0.1, 0.9] and TimesFM 2.5 emits deciles, so a quantile score on each model's own grid
+measures grid geometry rather than distributional quality. We evaluate the mean pinball loss
+on the grid every model can express, {0.10, 0.50, 0.90}. That is a three-point approximation
+and we do not call it CRPS. Any study ranking foundation models on a quantile-based score
+should state which levels its models actually emit.
 
 ## Known limitations, stated here as well as in the paper
 
