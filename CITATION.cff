@@ -12,13 +12,13 @@ authors:
       Department of Business and Technology Management, KAIST
     email: dkstngh3502@kaist.ac.kr
 repository-code: https://github.com/suhoahn-web/conformal-tsfm-commodities
-version: 1.1.0
+version: 1.1.1
 date-released: '2026-08-13'
-doi: 10.5281/zenodo.21910896
+doi: 10.5281/zenodo.21910915
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.21910896
-    description: Archived snapshot of release v1.1.0 (the version cited in the paper)
+    value: 10.5281/zenodo.21910915
+    description: Archived snapshot of release v1.1.1 (the version cited in the paper)
   - type: doi
     value: 10.5281/zenodo.21896843
     description: Concept DOI, always resolving to the latest version
